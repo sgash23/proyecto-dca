@@ -1,0 +1,392 @@
+/* ====================================================================================================================
+ * DEPÓSITO CENTRAL DE ARMAS, TODOS LOS DERECHOS RESERVADOS
+   PÁGINA WEB DESARROLLADA POR SEBASTIÁN SOTO HERNÁNDEZ (SGASH)
+ * ====================================================================================================================*/
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+body{
+  background-color: aliceblue;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Header */
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+/* Menú */
+nav{
+  background-color: rgb(20, 73, 6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+nav img {
+    min-height:70px;
+    min-width:70px;
+    height:auto;
+    width:auto;
+    max-height:50%;
+    max-width:50%;
+    font-size: 18px;
+  }
+
+
+/* Slider */
+.carousel-item:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.carousel-caption h1 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color:#FFF;
+  overflow:hidden;
+  animation:fadeOutLeft 1s both;
+}
+
+.carousel-caption h2 {
+  margin-bottom: 15px;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color:#FFF;
+  animation:fadeOutRight 1s both;
+}
+
+
+/* Cabeceras de imagenes (sobre-organizacion-actividades-repositorio-contacto) */
+.contenedor img {
+  min-width:100%;
+  filter: brightness(50%);
+  margin-bottom: 80px;
+}
+
+.text-sobre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#FFF;
+  text-align: center;
+}
+
+
+/* Introducción */
+.introduccion {
+  margin-bottom: 40px;
+}
+
+.left-image img{
+  box-shadow: 4px 4px 10px #999;
+}
+
+.introduccion .right-content h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+/* reseña */
+.reseña {
+  margin-bottom: 40px;
+}
+
+.reseña img{
+  box-shadow: 4px 4px 10px #999;
+}
+
+.reseña h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.reseña span {
+  text-align: center;
+}
+
+
+/* Documentos */
+.documentos h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.boton {
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: rgb(51, 190, 13); /*color botón*/
+  color: #ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  font-family: 'Roboto', sans-serif; /*tipografía texto*/
+  border-radius: 50px; /*bordes redondos*/
+}  
+
+
+/* Logos institucionales con la utilización del plugin carousel OWL*/
+.contact-partners {
+	margin-top: -8px!important;
+}
+
+.partners {
+	margin-top: 20px;
+	background-color: #f7f7f7;
+	padding: 40px 10px;
+  
+}
+
+.partners .owl-item {
+	text-align: center;
+	cursor: pointer;
+}
+
+.partners .partner-item img {
+	max-width: 156px;
+	margin: auto;
+}
+
+
+
+/* bienvenida */
+.more-info {
+	margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(20, 73, 6);
+}
+
+.more-info .left-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.more-info .more-info-content {
+	background-color: #f7f7f7;
+}
+
+.about-info .more-info-content {
+	background-color: transparent;
+}
+
+.about-info .right-content {
+	padding: 0px!important;
+	margin-right: 30px;
+}
+
+.more-info .right-content {
+	padding: 45px 45px 45px 30px;
+}
+
+.more-info .right-content span {
+	text-transform: uppercase;
+	font-size: 15px;
+	color: rgb(8, 7, 7);
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.more-info .right-content h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.more-info .right-content em {
+	font-style: normal;
+}
+
+.more-info .right-content p {
+	margin-bottom: 30px;
+}
+
+button .a {
+	background-color: rgb(20, 73, 6);
+}
+
+
+/* Misión y visión (Heroe de bootstrap) */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+
+
+
+/* Adelantos */
+.services {
+	margin-top: 40px;
+  margin-bottom: 0px;
+  margin: 20px;
+}
+
+.service-item img {
+	width: 100%;
+	overflow: hidden;
+  border:5px;
+  box-shadow: 4px 4px 10px #999;
+}
+
+.service-item .down-content {
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+
+.service-item .down-content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.25px;
+	margin-bottom: 5px;
+}
+
+.service-item .down-content p {
+	margin-bottom: 20px;
+}
+
+.adelantos{
+  text-align: center;
+  
+}
+
+
+
+/* footer */
+footer{
+  width: 100%;
+  padding: 20px 0px;
+  background-color: rgb(20, 73, 6);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+}
+
+.box__footer .logo img{
+  width: 240px;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #faf8f8;
+  font-size: 18px;
+}
+
+.box__footer h2{
+  margin-bottom: 20px;
+  color: #faf8f8;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #faf8f8;
+  font-weight: 600;
+}
+
+
+
+.box__footer a .fab{
+  font-size: 10px;
+}
+
+.box__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p{
+  margin-top: 20px;
+  color: #faf8f8;
+}
+
+.box__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #faf8f8;
+}
